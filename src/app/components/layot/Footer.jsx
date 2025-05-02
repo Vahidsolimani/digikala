@@ -1,0 +1,165 @@
+"use client";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaTelegramPlane, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#3c4b6d] text-white">
+      {/* بخش بالایی فوتر */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
+          {/* بخش خدمات مشتریان */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b pb-2 border-gray-500">خدمات مشتریان</h3>
+            <ul className="space-y-2">
+              <li><Link href="#" className="hover:text-blue-200 transition">پاسخ به پرسش‌های متداول</Link></li>
+              <li><Link href="#" className="hover:text-blue-200 transition">رویه بازگرداندن کالا</Link></li>
+              <li><Link href="#" className="hover:text-blue-200 transition">شرایط استفاده</Link></li>
+              <li><Link href="#" className="hover:text-blue-200 transition">حریم خصوصی</Link></li>
+              <li><Link href="#" className="hover:text-blue-200 transition">گزارش باگ</Link></li>
+            </ul>
+          </div>    
+
+          {/* بخش راهنمای خرید */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b pb-2 border-gray-500">راهنمای خرید</h3>
+            <ul className="space-y-2">
+              <li><Link href="#" className="hover:text-blue-200 transition">نحوه ثبت سفارش</Link></li>
+              <li><Link href="#" className="hover:text-blue-200 transition">رویه ارسال سفارش</Link></li>
+              <li><Link href="#" className="hover:text-blue-200 transition">شیوه‌های پرداخت</Link></li>
+              <li><Link href="#" className="hover:text-blue-200 transition">پرسش‌های متداول</Link></li>
+            </ul>
+          </div>
+
+          {/* بخش تماس با ما */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b pb-2 border-gray-500">تماس با ما</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-2">
+                <FaEnvelope />
+                <span>ایمیل: vahidsolimani5689@gmail.com</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaPhone />
+                <span>تلفن: 09020065689 </span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FaMapMarkerAlt />
+                <span>آدرس: تهران، خیابان آزادی، خیابان حبیب‌الله، پلاک ۱۲</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* بخش همراه ما باشید */}
+          <div className="space-y-4">
+            <h3 className="font-bold text-lg border-b pb-2 border-gray-500">همراه ما باشید</h3>
+            <div className="flex gap-4">
+              <Link href="#" className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition">
+                <FaTelegramPlane size={20} />
+              </Link>
+              <Link href="#" className="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition">
+                <FaInstagram size={20} />
+              </Link>
+              <Link href="#" className="bg-blue-400 p-2 rounded-full hover:bg-blue-500 transition">
+                <FaTwitter size={20} />
+              </Link>
+              <Link href="#" className="bg-blue-700 p-2 rounded-full hover:bg-blue-800 transition">
+                <FaLinkedin size={20} />
+              </Link>
+              <Link href="#" className="bg-red-600 p-2 rounded-full hover:bg-red-700 transition">
+                <FaYoutube size={20} />
+              </Link>
+            </div>
+            
+            {/* لوگوهای اطمینان */}
+            <div className="pt-4">
+              {/* <div className="flex flex-wrap gap-4">
+                <Image 
+                  src="/images/enamad.png" 
+                  alt="نماد الکترونیکی" 
+                  width={80} 
+                  height={80}
+                  className="object-contain"
+                />
+                <Image 
+                  src="/images/samandehi.png" 
+                  alt="نماد ساماندهی" 
+                  width={80} 
+                  height={80}
+                  className="object-contain"
+                />
+                <Image 
+                  src="/images/etehadie.png" 
+                  alt="اتحادیه صنفی" 
+                  width={80} 
+                  height={80}
+                  className="object-contain"
+                />
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* بخش میانی فوتر (لوگوهای پرداخت و حمل) */}
+      {/* <div className="bg-[#2c3a58] py-6">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+              <h4 className="text-sm mb-2">روش‌های پرداخت:</h4>
+              <div className="flex flex-wrap gap-2">
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+                  <Image 
+                    key={item}
+                    src={`/images/payment-${item}.png`}
+                    alt={`روش پرداخت ${item}`}
+                    width={60}
+                    height={40}
+                    className="object-contain bg-white p-1 rounded"
+                  />
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-sm mb-2">شرکت‌های حمل و نقل:</h4>
+              <div className="flex flex-wrap gap-2">
+                {[1, 2, 3, 4].map((item) => (
+                  <Image 
+                    key={item}
+                    src={`/images/delivery-${item}.png`}
+                    alt={`حمل و نقل ${item}`}
+                    width={80}
+                    height={40}
+                    className="object-contain bg-white p-1 rounded"
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      {/* بخش پایینی فوتر */}
+      <div className="bg-[#1e2a4a] py-6">
+        <div className="container mx-auto px-4 text-center text-sm">
+          <p>
+            فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
+          </p>
+          <p className="mt-2">
+            دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل کلیدی، پرداخت در محل، تحویل اکسپرس و ضمانت بازگشت کالا، موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
+          </p>
+          <p className="mt-4 text-gray-400">
+            © ۱۴۰۲ - کلیه حقوق برای دیجی‌کالا محفوظ است.
+          </p>
+          <p className="mt-4 text-gray-400">
+           توسعه یافته توسط وحید سلیمانی نیا
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
