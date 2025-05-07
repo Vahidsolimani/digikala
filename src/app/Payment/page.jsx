@@ -25,7 +25,7 @@ export default function PaymentPage() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4 bg-gray-50">
+    <div className="flex items-center mt-10 justify-center min-h-auto p-4 bg-gray-50">
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8 text-center">
         {/* انیمیشن لودینگ */}
         <div className="w-12 h-12 border-4 border-gray-200 border-t-blue-500 rounded-full animate-spin mx-auto mb-4"></div>

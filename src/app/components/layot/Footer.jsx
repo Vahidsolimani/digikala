@@ -6,7 +6,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaTelegramPlane, FaInstagram, FaTw
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3c4b6d] text-white">
+    <footer className="bg-[#700240] text-white">
       {/* بخش بالایی فوتر */}
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -76,75 +76,11 @@ export default function Footer() {
             
             {/* لوگوهای اطمینان */}
             <div className="pt-4">
-              {/* <div className="flex flex-wrap gap-4">
-                <Image 
-                  src="/images/enamad.png" 
-                  alt="نماد الکترونیکی" 
-                  width={80} 
-                  height={80}
-                  className="object-contain"
-                />
-                <Image 
-                  src="/images/samandehi.png" 
-                  alt="نماد ساماندهی" 
-                  width={80} 
-                  height={80}
-                  className="object-contain"
-                />
-                <Image 
-                  src="/images/etehadie.png" 
-                  alt="اتحادیه صنفی" 
-                  width={80} 
-                  height={80}
-                  className="object-contain"
-                />
-              </div> */}
             </div>
           </div>
         </div>
       </div>
-
-      {/* بخش میانی فوتر (لوگوهای پرداخت و حمل) */}
-      {/* <div className="bg-[#2c3a58] py-6">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div>
-              <h4 className="text-sm mb-2">روش‌های پرداخت:</h4>
-              <div className="flex flex-wrap gap-2">
-                {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-                  <Image 
-                    key={item}
-                    src={`/images/payment-${item}.png`}
-                    alt={`روش پرداخت ${item}`}
-                    width={60}
-                    height={40}
-                    className="object-contain bg-white p-1 rounded"
-                  />
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="text-sm mb-2">شرکت‌های حمل و نقل:</h4>
-              <div className="flex flex-wrap gap-2">
-                {[1, 2, 3, 4].map((item) => (
-                  <Image 
-                    key={item}
-                    src={`/images/delivery-${item}.png`}
-                    alt={`حمل و نقل ${item}`}
-                    width={80}
-                    height={40}
-                    className="object-contain bg-white p-1 rounded"
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* بخش پایینی فوتر */}
-      <div className="bg-[#1e2a4a] py-6">
+      <div className="b-[#700240] py-6">
         <div className="container mx-auto px-4 text-center text-sm">
           <p>
             فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
@@ -153,7 +89,7 @@ export default function Footer() {
             دیجی‌کالا به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل کلیدی، پرداخت در محل، تحویل اکسپرس و ضمانت بازگشت کالا، موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود.
           </p>
           <p className="mt-4 text-gray-400">
-            © ۱۴۰۲ - کلیه حقوق برای دیجی‌کالا محفوظ است.
+            © 1404 - کلیه حقوق برای دیجی‌کالا محفوظ است.
           </p>
           <p className="mt-4 text-gray-400">
            توسعه یافته توسط وحید سلیمانی نیا

@@ -25,7 +25,7 @@ export default function ProductSlider4({ products }) {
       className="mySwiper"
     >
       {products.map((product) => (
-        <SwiperSlide className='border flex justify-center items-center flex-wrap' key={product.id}>
+        <SwiperSlide className=' flex justify-center items-center flex-wrap' key={product.id}>
           <Link href={`/product/${product.id}`}>
             <Image
               src={product.images.main}
