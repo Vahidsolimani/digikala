@@ -16,26 +16,9 @@ export default function Header() {
 
   return (
     <header className={`bg-white rounded *:p-2 sticky top-0 z-[999] ${isScrolled ? 'shadow-md' : ''}`}>
-      <Hedtop />
       <Hedmain />
       <Hedbottem />
     </header>
-  );
-}
-
-function Hedtop() {
-  return (
-    <div className='w-full bg-gradient-to-l from-[#1e2a3f] to-[#1e2a3f]'>
-      <div className="container mx-auto">
-        <div className="flex p-2 cursor-pointer justify-center items-center">
-          <div>
-            <h1 className='text-white h-1/3 bg-[#ed1945] px-4 py-2 rounded font-bold text-sm md:text-xl'>
-              خرید خودرو در دیجی کالا
-            </h1>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }
 
@@ -50,7 +33,7 @@ function Hedmain() {
         <div className='p-2'>
 
           <Link href='/' className='flex-shrink-0'>
-            <Image src={'Logo.svg'} alt='logo' width={100} height={40} className='w-auto h-8 md:h-10' />
+            <Image src={'Logo.svg'} alt='logo' width={100} height={40} className='w-auto h-6 md:h-6' />
           </Link>
         </div>
 
@@ -86,41 +69,15 @@ function Hedbottem() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div className='relative border-b '>
-      <div className='container mx-auto  py-2 md:py-0 px-1'>
+      <div className='container mx-auto md:py-0 px-1'>
         <div>
-        <div>
-            <ul className="flex lg:hidden p-2  gap-x-5 text-sm font-bold items-center  ">
-              <li className="group    py-2">
-                <Link href="/" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
-                  خانه 
-                </Link>
-                
-              </li>
-              <li className="group relative  py-2">
-                <Link href="/FAQ" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
-                  سوالی دارید؟
-                </Link>
-              </li>
-              <li className="group relative  py-2">
-                <Link href="/about" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
-                  درباره ما
-                </Link>
-                
-              </li>
-              <li className="group relative  py-2">
-                <Link href="/help" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
-                  راهنمای خرید و پرداخت
-                </Link>
-                
-              </li>
-            </ul>
-          </div>
+
         </div>
         <div className='flex justify-between items-center gap-4'>
           {/* //////مونی موبایل///// */}
           <div className=''>
             <div className="">
-          
+
               <div
                 className="flex items-center gap-2 p-2 cursor-pointer"
                 onClick={() => setIsMenuOpen(true)}
@@ -136,9 +93,9 @@ function Hedbottem() {
                       <h3 className="text-lg font-bold">دسته‌بندی‌ها</h3>
                       <button
                         onClick={() => setIsMenuOpen(false)}
-                        className="p-2 rounded-full bg-black text-gray-500"
+                        className="p-2 rounded-full text-gray-500"
                       >
-                        <FaTimes className="text-xl text-white cursor-pointer" />
+                        <FaTimes className="text-xl text-black cursor-pointer" />
                       </button>
                     </div>
 
@@ -154,6 +111,33 @@ function Hedbottem() {
                       <Link href="/components/home" className="block p-2 hover:bg-gray-100 rounded">    تخفیف ها   </Link>
                       <Link href="/components/home7" className="block p-2 hover:bg-gray-100 rounded">     بند ساعت   </Link>
                     </nav>
+                    <div>
+                      <ul className=" p-2 lg:hidden  border-t text-sm font-bold items-center  ">
+                        <li className="group    py-2">
+                          <Link href="/" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
+                            خانه
+                          </Link>
+
+                        </li>
+                        <li className="group relative py-2 ">
+                          <Link href="/FAQ" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
+                            سوالی دارید؟
+                          </Link>
+                        </li>
+                        <li className="group relative py-2 ">
+                          <Link href="/about" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
+                            درباره ما
+                          </Link>
+
+                        </li>
+                        <li className="group relative py-2">
+                          <Link href="/help" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
+                            راهنمای خرید و پرداخت
+                          </Link>
+
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
                   <div
@@ -164,29 +148,27 @@ function Hedbottem() {
               )}
             </div>
           </div>
-
-
           <div>
             <ul className="lg:flex hidden p-2 gap-x-20 font-bold items-center gap-1 text-base ">
-              <li className="group relative  py-2">
+              <li className="group relative  ">
                 <Link href="/" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
                   خانه
                 </Link>
                 <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-red-500 transition-all duration-300 group-hover:w-[calc(100%-16px)]"></span>
               </li>
-              <li className="group relative  py-2">
+              <li className="group relative  ">
                 <Link href="/FAQ" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
                   سوالی دارید؟
                 </Link>
                 <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-red-500 transition-all duration-300 group-hover:w-[calc(100%-16px)]"></span>
               </li>
-              <li className="group relative  py-2">
+              <li className="group relative  ">
                 <Link href="/about" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
                   درباره ما
                 </Link>
                 <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 bg-red-500 transition-all duration-300 group-hover:w-[calc(100%-16px)]"></span>
               </li>
-              <li className="group relative  py-2">
+              <li className="group relative  ">
                 <Link href="/help" className="text-gray-700 font-bold  text-balance hover:text-red-500 transition-colors">
                   راهنمای خرید و پرداخت
                 </Link>
