@@ -1,13 +1,11 @@
-
 import "./globals.css";
 import Footer from "./components/layot/Footer";
 import Heder from "./components/layot/Header";
+import Notification from "./components/nootif/Notification";
 export const metadata = {
   title: "فروشگاه من",
   description: "دیجیکالا",
 };
-
-
 
 
 export default function RootLayout({ children }) {
@@ -19,9 +17,10 @@ export default function RootLayout({ children }) {
 
            <Heder/>
            <section className="min-h-screen  grow">
-
               {children}
 
+           <Notification/>
+            
            </section>
            <Footer/>
 

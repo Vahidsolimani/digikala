@@ -7,9 +7,40 @@ body,html {
 }
 
 @font-face {
-  font-family: 'Vazir';
-  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/woff2/Vazir.woff2') format('woff2');
+  font-family: 'IRANSans';
+  src: url('/fonts/1.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
 }
+@font-face {
+  font-family: 'vazir';
+  src: url('/fonts/2.woff2') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+#foot{
+  font-family: 'IRANSans', sans-serif !important;
+}
+#head{
+  font-family: 'vazir', sans-serif !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes fadeIn {
@@ -48,3 +79,4 @@ body,html {
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
 }
+

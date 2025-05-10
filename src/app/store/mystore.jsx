@@ -1,23 +1,38 @@
 import { create } from 'zustand';
-
 const useStore = create((set, get) => ({
   myData: [],
-  /////add///
+  notification: null, 
+
+
   addtobasket: (newProduct) => {
     set((state) => {
       const existingProduct = state.myData.find((item) => item.id === newProduct.id);
-      
+
       if (existingProduct) {
-        alert("کاربر محترم این محصول قبلا در سبد شما اضافه شده است");
-        return state; 
+        return {
+          ...state,
+          notification: {
+            message: "این محصول قبلاً در سبد شما وجود دارد!",
+            type: "warning",
+          },
+        };
       }
-      alert(" محصول  به سبد خرید شما اضافه شد ");
-      
-      return { 
-        myData: [...state.myData, { ...newProduct, quantity: 1 }] 
+
+ 
+      return {
+        myData: [...state.myData, { ...newProduct, quantity: 1 }],
+        notification: {
+          message: "محصول با موفقیت به سبد اضافه شد !",
+          type: "success",
+        },
       };
     });
   },
+
+  // تابع پاک کردن نوتیفیکیشن
+  clearNotification: () => set({ notification: null }),
+
+
   ///remove///
   removeFromBasket: (productId) => {
     set((state) => ({

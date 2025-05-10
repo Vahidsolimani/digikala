@@ -16,6 +16,7 @@ import Svg2 from './components/svg/svg2'
 import Categoresss from './category/categoresss'
 import Svg4 from './components/svg/svg4'
 import Svg3 from './components/svg/svg3'
+import "./globals.css";
 export default function Page() {
 
   return (
@@ -23,6 +24,7 @@ export default function Page() {
 
       <section className=' w-full'>
         <div className='container relative mx-auto '>
+        
           <Sliderhome />
           <HomePage />
           <Home2 />

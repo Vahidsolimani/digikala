@@ -1,12 +1,12 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaTelegramPlane, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import "./../../globals.css";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#700240] text-white">
+    <footer id='foot' className="bg-[#700240] text-white">
       {/* بخش بالایی فوتر */}
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

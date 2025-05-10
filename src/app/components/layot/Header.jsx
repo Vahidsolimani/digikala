@@ -15,7 +15,7 @@ export default function Header() {
 
 
   return (
-    <header className={`bg-white rounded *:p-2 sticky top-0 z-[999] ${isScrolled ? 'shadow-md' : ''}`}>
+    <header id='head' className={`bg-white rounded *:p-2 sticky top-0 z-[999] ${isScrolled ? 'shadow-md' : ''}`}>
       <Hedmain />
       <Hedbottem />
     </header>

@@ -189,6 +189,8 @@ function Price({ sellingPrice, rrpPrice }) {
 function ActionButtons({ state }) {
   const { addtobasket } = mystore()
 
+
+
   return (
     <div className="flex flex-col sm:flex-row gap-3 mb-6">
       <button 
@@ -197,6 +199,7 @@ function ActionButtons({ state }) {
       >
         افزودن به سبد خرید
       </button>
+
       <button className="border border-gray-300 hover:bg-gray-50 text-gray-700 py-3 px-6 rounded-lg font-medium transition-colors flex-1">
         اشتراک گذاری
       </button>
