@@ -2,20 +2,15 @@
 import { FaBars, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 import React, { useState, } from 'react';
 import Image from 'next/image';
-
 import Link from 'next/link';
 import mystore from './../../store/mystore'
-
-
-
-
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
 
   return (
-    <header id='head' className={`bg-white rounded *:p-2 sticky top-0 z-[999] ${isScrolled ? 'shadow-md' : ''}`}>
+    <header id='head' className={`bg-white rounded *:p-2 *:md:p-0 sticky top-0 z-[999] ${isScrolled ? 'shadow-md' : ''}`}>
       <Hedmain />
       <Hedbottem />
     </header>
@@ -69,7 +64,7 @@ function Hedbottem() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div className='relative border-b '>
-      <div className='container mx-auto md:py-0 px-1'>
+      <div className='container mx-auto md:py-0  md:px-4'>
         <div>
 
         </div>
