@@ -14,6 +14,7 @@ export default async function HomePage() {
       <div className="flex justify-between mb-3 md:p-4  items-center">
         <div><h1 className=" font-bold text-sm lg:text-2xl text-white text-center ">
         {data.result.home_8.title}
+       
         </h1></div>
         <div>
           <Link className="text-white flex text-sm md:text-base justify-center items-center gap-x-3  p-1" href='components/home10'> 
