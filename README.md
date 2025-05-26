@@ -1,7 +1,7 @@
 # myshop
 
 
-- [Demo Project](https://digikala-shop.vercel.app/)
+- [Demo Project](https://digikalashop-sigma.vercel.app/)
 
 - Developed by vahid solimani
 
