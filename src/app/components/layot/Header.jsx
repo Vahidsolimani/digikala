@@ -48,7 +48,6 @@ function Hedmain() {
             />
           </svg>
 
-          {/* نمایش عدد اگر بزرگ‌تر از صفر باشد */}
           {totalItems > 0 && (
             <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
               {totalItems}
@@ -69,7 +68,7 @@ function Hedbottem() {
 
         </div>
         <div className='flex justify-between items-center gap-4'>
-          {/* //////مونی موبایل///// */}
+          
           <div className=''>
             <div className="">
 
