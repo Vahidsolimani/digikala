@@ -7,7 +7,7 @@ export default function FAQPage() {
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
+   
   const faqItems = [
     {
       question: "چگونه می‌توانم سفارشم را پیگیری کنم؟",
