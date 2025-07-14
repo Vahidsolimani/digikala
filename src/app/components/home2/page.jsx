@@ -17,6 +17,7 @@ export default function Page() {
       try {
         const result = await fetchHomeData()
         setData(result)
+        console.log(result);
       } catch (err) {
         setError(err.message)
       } finally {
