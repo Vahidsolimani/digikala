@@ -12,7 +12,7 @@ export default async function HomePage() {
     <main className="p-4 bg-white">
 
       <div className="flex justify-between mb-3 md:p-4  items-center">
-        <div><h1 className=" font-bold text-sm lg:text-2xl text-red-700 text-center ">
+        <div><h1 className=" text-sm lg:text-xl text-center  ">
         {data.result.home_7.title}
         </h1></div>
         <div>

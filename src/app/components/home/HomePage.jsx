@@ -12,7 +12,7 @@ export default async function HomePage() {
     <main className="p-4">
 
       <div className="flex justify-between mb-3 md:p-4  items-center">
-        <div><h1 className=" font-bold text-sm lg:text-2xl text-red-700 text-center ">
+        <div><h1 className="  text-sm lg:text-xl text-center ">
           {data.result.selling_and_sales.title}
         </h1></div>
         <div>
@@ -22,7 +22,7 @@ export default async function HomePage() {
         </div>
       </div>
 
-      <ProductSlider products={data.result.selling_and_sales.products} />
+      <ProductSlider products={data.result.selling_and_sales.products}/>
     </main>
   );
 }
