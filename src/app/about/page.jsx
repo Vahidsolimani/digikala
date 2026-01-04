@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function AboutPage() {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50"> 
       {/* هیرو بخش */}
       <div className="relative h-96 w-full overflow-hidden">
        
